@@ -340,6 +340,8 @@ sqlcmd -S localhost,1433 -U sa -P "<SA_PASSWORD>" -d RequestStats_restore -Q "SE
 Готовые запросы под это лежат в `sql/restore.sql` и `sql/verify_restore.sql`.
 
 ---
+<img width="1024" height="768" alt="resrtore" src="https://github.com/user-attachments/assets/59cd7174-00a9-4a2e-8854-5017c2f798b6" />
+
 
 ## 9. Retention логов Tomcat
 
