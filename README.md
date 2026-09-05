@@ -336,9 +336,6 @@ sqlcmd -S localhost,1433 -U sa -P "<SA_PASSWORD>" -d RequestStats_restore -Q "SE
 статусе `ONLINE`, `RowCount_Restore = 4` совпало с `RowCount_Original = 4`, и все 4 строки в
 `_restore` (те же `id`, `method`, `path`, `created_at`) идентичны оригиналу.
 
-**(СКРИНШОТ: единственный скриншот всего гайда — весь вывод этих пяти команд целиком, от
-`RESTORE DATABASE` до последнего `SELECT TOP 5`. Это доказательство того, что бэкап рабочий:
-restore выполнен, база в строю, количество строк и содержимое совпадают с оригиналом.)**
 
 Готовые запросы под это лежат в `sql/restore.sql` и `sql/verify_restore.sql`.
 
