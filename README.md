@@ -379,24 +379,7 @@ type C:\Tomcat9\logs\cleanup-history.log
 
 ---
 
-## 10. Структура репозитория
 
-```
-RequestStats/
-├── README.md                      — этот файл
-├── sql/
-│   ├── init.sql                   — создание БД и таблицы (из задания)
-│   ├── backup.sql                 — пример прямого BACKUP DATABASE без обвязки на PowerShell
-│   ├── restore.sql                — restore в *_restore с MOVE
-│   └── verify_restore.sql         — сверка количества строк и содержимого
-├── scripts/
-│   ├── backup-db.ps1              — регулярный backup с таймстампом в имени + лог в backup-history.log
-│   └── cleanup-tomcat-logs.ps1    — retention логов Tomcat
-├── docs/
-│   └── deployment.md              — этот же процесс в сжатом виде, для быстрой сверки
-└── screenshots/
-    └── 01-restore-success.png     — единственный скриншот: полный вывод restore + проверки
-```
 
 ---
 
